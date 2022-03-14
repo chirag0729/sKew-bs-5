@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Spartan:wght@400;700&display=swap');
+
+/* fonts */
+.ft_1, .ft_11, .ft_2, .ft_3, .ft-4, .ft_5, .ft_62, .ft_6, .ft_61 {
+    font-family: roboto, sans-serif;
+}
+
+.ft_1{ }
+
+.ft_11 {
+    font-size: 35px;
+}
+
+.ft_2 {
+    font-size: 120px;
+    letter-spacing: 3px;   
+}
+
+.ft_3 {
+    font-size: 25px;
+}
+
+.ft-4 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ft_5 {
+    font-size: 11px;
+}
+
+.ft_62 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.ft_6 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.ft_61 {
+    font-size: 13px;
+}
+
+/* colors */
+.cl_1 {
+    color: #fff;
+}
+
+.cl_2 {
+    color: #000;
+}
+
+.cl_3 {
+    color: rgb(240, 152, 19);
+}
+
+.cl_4 {
+    color: rgb(104, 104, 104);
+}
+
+.cl_5 {
+    color: rgb(121, 121, 121);
+}
+.cl_6 {
+    color: rgb(216, 216, 216);
+}
+/* navbar Starts */
+.fa-bars-staggered:hover {
+  color: rgb(240, 152, 19);
+}
+
+.navbar-nav a.nav-link.active {
+    color: rgb(240, 152, 19);
+}
+
+a.nav_symbl:hover,
+.navbar-nav a:hover {
+    color: rgb(240, 152, 19);
+    text-decoration: underline;
+}
+/* navbar end */
+
+/* Home page */
+.home-bg {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50,58,69,0.9)));
+    background-image: linear-gradient(180deg, rgba(50,58,69,0.2), rgba(50,58,69,0.2)), url(images/83-838362_web-developer.jpg);
+    min-height: 800px; 
+}
+
+.home_hr:not([size]) {
+    height: 6px;
+    width: 440px;
+    padding-right: 30px;
+}
+
+.home h1 {
+    padding-top: 100px;
+}
+
+/* About Page */
+.about-bg-main {
+    position: relative;
+}
+
+.about-bg-top {
+    height: calc(100% + 160px);
+}
+
+.card_symbol i {
+    padding: 8px 10px;
+}
+
+.card_symbol i:hover {
+    padding: 10px 12px;
+    color: rgb(233, 140, 26);
+}
+
+/* work page */
+.work_bg {
+    background-image: url(images/work-img.jpg);
+    min-height: 700px;
+}
+
+.hr_work:not([size]) {
+    height: 2px;
+    margin: 50px 0;
+}
+
+.work_btn {
+    margin-top: 50px;
+}
+
+.btn-1,
+.btn-2 {
+    padding: 5px 10px;
+    box-shadow: 1px 4px 2px 0px rgb(194, 194, 194);
+}
+
+.n_t_i:focus ,
+.btn-1:focus,
+.btn-2:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-1:hover,
+.btn-2:hover {
+    color: rgb(233, 140, 26);
+    transform: translateY(3px);
+    border: 1px solid rgb(233, 140, 26);
+    background-color:#fff;
+    box-shadow: none;
+}
+
+.uppperpad {
+    padding-top: 200px;
+}
+
+.work_card span {
+    padding: 6px 12px;
+}
+
+/* team page */
+.team_page{
+    padding-top: 120px;
+}
+
+.span_person {
+    width: 200px;
+    height: 200px;
+}
+
+.company-logo img {
+  width: 100px;
+  margin: 15px 20px;
+}
+
+/* contact page */
+.contact_bg {
+    background-image: url(images/About-Basis-tech.jpg);
+    min-height: 700px;
+}
+
+.contact_input{
+    max-width: 450px;
+}
+
+ input[type="text"] {
+    background-color: transparent;
+} 
+
+input[type="text"]:focus {
+    background-color: transparent;
+    border: 1px solid rgb(233, 140, 26);
+    box-shadow: none;
+}
+
+input[type="text"]::placeholder {
+    color: #fff;
+}
+
+.uppperpad-2 {
+    padding-top: 220px;
+}
+
+.social_links .fa-brands {
+    font-size: 25px;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.fa-brands:hover {
+    color: rgb(233, 140, 26);
+}
+
+.copy-bg-top {
+    min-height: 100px;
+}
+
+/* Commen background properties */
+.contact_bg, .work_bg, .home-bg {
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    object-fit: fill;
+    -o-object-fit: fill;
+}
+
+/* Commen skew background properties */
+.copy-bg-top, .about-bg-top {
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    transform: skewY(-3deg);
+    transform-origin: top left;
+    z-index: 10;
+}
+
+/* z-index for all */
+.about_page,
+.team_page,
+.company-logo,
+.copy-bg-main,
+.copyright {
+    position: relative;
+    z-index: 50;
+}
+
+@media  screen and (max-width: 950px) {
+    .home-bg {
+        min-height: 500px; 
+    }
+
+    .about-bg-top,
+    .copy-bg-top  {
+        transform: skewY(-4deg);
+    }
+
+    .about-bg-top {
+        height: calc(100% +90px);
+    }
+   
+    .home h1 {
+        padding-top: 50px;
+    }
+
+    .team_page{
+        padding-top: 70px;
+    }
+
+    .span_person {
+        width: 400px;
+    }}
+
+@media  screen and (max-width: 600px) {
+    .ft_11 {
+        font-size: 25px;
+    }
+
+    .ft_2 {
+        font-size: 70px;
+        text-align: center;
+    }
+
+    .ft_3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .home_hr:not([size]) {
+        width: auto;
+        text-align: center;
+    }
+
+    .work_btn {
+        margin-top: 18px;
+    }
+
+    .btn-1,
+    .btn-2 {
+        font-size: 10px;
+    }
+
+    .uppperpad,
+    .uppperpad-2 {
+        padding-top: 170px;
+    }
+
+    .ft-4,
+    .ft_62 {
+        font-size: 16px;
+    }
+
+    .hr_work:not([size]) {
+        height: 2px;
+        margin: 18px 0;
+    }
+
+    .about-bg-top {
+        height: calc(100% + 70px);
+    }
+    
+    .work_bg {
+        min-height: 550px;
+    }
+
+    .contact_bg {
+        min-height: 450px;
+    }
+
+    .uppperpad {
+        padding-top: 80px;
+    }
+ 
+    .uppperpad-2 {
+        padding-top: 120px;
+    }}
+
+@media  screen and (max-width: 325px) {
+    .ft_2 {
+        font-size: 50px;
+        text-align: center;
+        letter-spacing: -2px;
+    }
+
+    .ft_3 {
+        font-size: 15px;
+        text-align: center;
+    }  
+
+    .social_links .fa-brands {
+        font-size: 15px;
+}}
+
+
+
+
+
+
+
